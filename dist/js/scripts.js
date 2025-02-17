@@ -25,25 +25,6 @@ AOS.init({
     duration: 700,
 });
 
-// Prevent scrolling when a video is playing
-document.addEventListener("DOMContentLoaded", function () {
-    const videos = document.querySelectorAll("video");
 
-    videos.forEach(video => {
-        video.addEventListener("play", function () {
-            document.body.style.overflow = "hidden"; // Disable scrolling
-            document.documentElement.style.overflow = "hidden";
-        });
 
-        video.addEventListener("pause", function () {
-            document.body.style.overflow = "auto"; // Re-enable scrolling
-            document.documentElement.style.overflow = "auto";
-        });
-
-        video.addEventListener("ended", function () {
-            document.body.style.overflow = "auto"; // Re-enable scrolling
-            document.documentElement.style.overflow = "auto";
-        });
-    });
-});
 
