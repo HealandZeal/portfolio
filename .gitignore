@@ -1,0 +1,6 @@
+node_modules
+server-mailgun
+server-testing
+server-nodemailer
+.env
+.idea
